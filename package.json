@@ -1,0 +1,32 @@
+{
+  "name": "selenium-web",
+  "version": "1.0.0",
+  "description": "selenium web driver browser automation library",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubdmn/selenium-web.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "selenium",
+    "webdriver",
+    "browser"
+  ],
+  "author": "dmngit/ntsgit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/githubdmn/selenium-web/issues"
+  },
+  "homepage": "https://github.com/githubdmn/selenium-web#readme",
+  "dependencies": {
+    "chromedriver": "^96.0.0",
+    "nodemon": "^2.0.15",
+    "selenium-webdriver": "^4.1.0"
+  }
+}
