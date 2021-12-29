@@ -6,10 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon app.js",
-    "dmn": "npx nodemon app.dmn.js",
-    "nts":"npx nodemon app.nts.js",
-    "brn":"npx nodemon app.brn.js",
-    "igr": "npx nodemon app.igr.js"
+    "dmn": "npx eslint ./dmn/**/*.js --fix && npx nodemon app.dmn.js",
+    "nts": "npx eslint ./nts/**/*.js && npx nodemon app.nts.js",
+    "brn": "npx eslint ./brn/**/*.js && npx nodemon app.brn.js",
+    "igr": "npx eslint ./igr/**/*.js && npx nodemon app.igr.js",
+    "lint": "npx eslint ./**/*.js",
+    "lint-fix": "npx eslint ./**/*.js --fix"
   },
   "repository": {
     "type": "git",
@@ -32,5 +34,12 @@
     "chromedriver": "^96.0.0",
     "nodemon": "^2.0.15",
     "selenium-webdriver": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0"
   }
 }
