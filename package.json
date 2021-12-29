@@ -5,7 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon app.js"
+    "start": "npx nodemon app.js",
+    "dmn": "npx nodemon app.dmn.js",
+    "nts":"npx nodemon app.nts.js",
+    "brn":"npx nodemon app.brn.js",
+    "igr": "npx nodemon app.igr.js"
   },
   "repository": {
     "type": "git",
