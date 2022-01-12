@@ -1,4 +1,7 @@
+const { fn } = require('./ex01/test')
+
 
 exports.run = () => {
-  console.log('TODO DMN')
+  console.log('run ex01')
+  fn()
 }
